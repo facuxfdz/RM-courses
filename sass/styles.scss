@@ -1,0 +1,230 @@
+$primary-color: #000000;
+$primary-color-light: rgba(0,0,0,.9); 
+$grey1: #5f5f5f;
+$grey2: #DADADA;
+$grey3: #C4C4C4;
+$secondary-color: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat-Regular';
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Navbar
+#header {
+    background-color: rgba(245, 245, 245,.7);
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-between; 
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-link {
+
+    margin: 0 .5rem;
+
+    a{
+        margin-left: 1rem;
+        color: $primary-color;
+        font-weight: 400;
+        font-size: 16px;
+        position: relative;
+        transition: color .3s ease;
+
+        &:hover {
+            color: $grey1;
+        }
+    }
+}
+
+#logo {
+    width: 15%;
+    height: 25px;
+    background-color: $primary-color;
+
+}
+
+// -----CONTAINERS-----
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    transition: opacity .3s ease;
+
+    &:hover {
+        opacity: 75%;
+        cursor: pointer;
+    }
+}
+
+// -----CARROUSELS-----
+.carrousel {
+    height: 75vh;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+        &:hover {
+            opacity: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+.banner-carrousel {
+    background-color: $primary-color-light;
+    width: 100%;
+    svg {
+        color: $secondary-color;
+    }
+}
+
+.most-liked-carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 870px;
+    height: 285px;
+    background-color: $grey2;
+    margin: 0 14px;
+}
+
+// -----SECTIONS-----
+.page-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.plans-info {
+    width: 75%;
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    height: 35vh;
+    padding: 3rem 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.footer-block {
+    width: 25%;
+    max-width: 160px;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+        transition: opacity .3s ease;
+        &:hover {
+            opacity: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+.profile-logo {
+    display: flex;
+    align-items: center;
+}
+
+// -----STRUCTURES-----
+
+.card {
+    width: 30%;
+    height: 85%;
+    transition: all .4s ease;
+    border: 1px solid $primary-color;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.primary-card {
+    height: 100%;
+    background-color: $secondary-color;
+    color: $secondary-color;
+}
+
+.secondary-card {
+    background-color: $grey2;
+    color: $primary-color;
+}
+
+
+
+// -----TEXT STYLES-----
+.banner-title {
+    color: $secondary-color;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -.04rem;
+}
+
+.footer-title {
+    font-weight: 800;
+    font-size: 17px;
+    color: $grey3;
+    opacity: 50%;
+    margin: .7rem 0;
+}
+
+.footer-link {
+    margin-top: .5rem;
+}
+
+.footer-link a {
+    color: $secondary-color;
+    transition: color .3s ease;
+    font-size: 15px;
+}
+
+.footer-link a:hover {
+    color: $grey1;
+}
+
+// -----ICONS-----
+
+.bi-caret-left {
+    margin-left: 8rem;
+}
+
+.bi-caret-right {
+    margin-right: 8rem;
+}
