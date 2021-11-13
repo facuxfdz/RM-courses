@@ -1,41 +1,26 @@
 {
   "name": "rm-courses",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "pagina de cursos online",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
   "description": "Página de cursos online",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
->>>>>>> eca7d85c2f0709d7a360dcea8ea328bfd8321a13
+    "sass": "sass --watch scss:css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/facuxfdz/RM-courses.git"
   },
-<<<<<<< HEAD
-  "author": "Facundo Agustin Fernandez",
-=======
   "author": "Facundo Fernandez",
->>>>>>> eca7d85c2f0709d7a360dcea8ea328bfd8321a13
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/facuxfdz/RM-courses/issues"
   },
   "homepage": "https://github.com/facuxfdz/RM-courses#readme",
-<<<<<<< HEAD
-=======
-  "dependencies": {
-    "node-sass": "^6.0.1"
-  },
->>>>>>> eca7d85c2f0709d7a360dcea8ea328bfd8321a13
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "sass": "^1.43.4"
   }
 }
