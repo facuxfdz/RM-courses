@@ -57,8 +57,7 @@ a {
 #logo {
     width: 15%;
     height: 25px;
-    background-color: $primary-color;
-
+    text-align: center;
 }
 
 // -----CONTAINERS-----
@@ -118,7 +117,9 @@ a {
 }
 
 .banner-carrousel {
-    background-color: $primary-color-light;
+    // background-color: $primary-color-light;
+    background-image: url('../src/banner.jpg');
+    background-position: center;
     width: 100%;
     svg {
         color: $secondary-color;
@@ -217,6 +218,13 @@ a {
     color: $secondary-color;
     font-weight: 800;
     font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1,
+    h2{
+        margin: 1rem 1rem;
+    }
 }
 
 .section-title {
