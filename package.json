@@ -1,0 +1,22 @@
+{
+  "name": "rm-courses",
+  "version": "1.0.0",
+  "description": "pagina de cursos online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facuxfdz/RM-courses.git"
+  },
+  "author": "Facundo Agustin Fernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facuxfdz/RM-courses/issues"
+  },
+  "homepage": "https://github.com/facuxfdz/RM-courses#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
