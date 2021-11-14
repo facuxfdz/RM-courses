@@ -119,30 +119,6 @@ a {
 */
 
 
-/*
-    =================================================================================================================================================
-                                                                    BEGIN "DELETEABLE"
-    =================================================================================================================================================
-*/
-
-/*
-    =============================
-        DELETE ADDING CONTENT 
-    =============================
-*/
-#explore-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem;
-}
-
-/*
-    =================================================================================================================================================
-                                                                    END "DELETEABLE"
-    =================================================================================================================================================
-*/
 
 
 /*
@@ -206,6 +182,7 @@ a {
 
 
 .section-title {
+    text-align: center;
     font-weight: 700;
     font-size: 40px;
     letter-spacing: -.04rem;
@@ -243,10 +220,11 @@ a {
     }
 }
 
-.most-liked-carrousel {
+.section-carrousel {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 60%;
     grid-template-rows: 1fr;
+    grid-gap: 1rem 1rem;
     width: 60%;
     height: 285px;
     box-shadow: 10px 9px 10px grey;
@@ -280,6 +258,7 @@ a {
     padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 
