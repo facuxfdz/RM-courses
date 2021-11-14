@@ -150,6 +150,18 @@ a {
   cursor: pointer;
 }
 
+.grid-container {
+  display: grid;
+  padding: 2.5rem;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 3rem 0.5rem;
+  height: 100vh;
+  width: 100%;
+}
+
 /*
     =============================
               SECTIONS 
@@ -208,7 +220,7 @@ a {
 
 /*
     =============================
-              TITLES 
+              PAGE CONTENT 
     =============================
 */
 .banner-title {
@@ -224,11 +236,10 @@ a {
   margin: 1rem 0;
 }
 
-/*
-    =============================
-                INFO
-    =============================
-*/
+.category {
+  text-align: center;
+}
+
 .course-info {
   padding: 1rem 1rem;
   display: flex;

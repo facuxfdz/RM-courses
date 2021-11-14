@@ -178,6 +178,18 @@ a {
     }
 }
 
+.grid-container {
+    display: grid;
+    padding: 2.5rem;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 3rem .5rem;
+    height: 100vh;
+    width: 100%;
+}
+
 
 /*
     =============================
@@ -243,7 +255,7 @@ a {
 
 /*
     =============================
-              TITLES 
+              PAGE CONTENT 
     =============================
 */
 
@@ -260,11 +272,9 @@ a {
     }
 }
 
-/*
-    =============================
-                INFO
-    =============================
-*/
+.category {
+    text-align: center;
+}
 
 .course-info {
     padding: 1rem 1rem;
