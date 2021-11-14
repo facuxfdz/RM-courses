@@ -5,6 +5,12 @@ $grey2: #DADADA;
 $grey3: #C4C4C4;
 $secondary-color: #ffffff;
 
+/*
+    =================================================================================================================================================
+                                                                    BEGIN "GENERAL STYLES"
+    =================================================================================================================================================
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +29,26 @@ a {
     text-decoration: none;
 }
 
-// Navbar
+/*
+    =================================================================================================================================================
+                                                                    END "GENERAL STYLES"
+    =================================================================================================================================================
+*/
+
+//=====================================================================================================================================================================
+
+/*
+    =================================================================================================================================================
+                                                                    BEGIN "NAVBAR STYLES"
+    =================================================================================================================================================
+*/
+
+
+/*
+    =============================
+                GENERAL
+    =============================
+*/
 #header {
     background-color: rgba(245, 245, 245,.7);
     padding: 1rem 2rem;
@@ -54,13 +79,23 @@ a {
     }
 }
 
+/*
+    =============================
+                LOGO
+    =============================
+*/
 #logo {
     width: 15%;
     height: 25px;
     text-align: center;
 }
 
-// -----CONTAINERS-----
+/*
+    =============================
+            USER PROFILE
+    =============================
+*/
+
 .profile-container {
     display: flex;
     justify-content: space-between;
@@ -72,6 +107,29 @@ a {
     }
 }
 
+.profile-logo {
+    display: flex;
+    align-items: center;
+}
+
+/*
+    =================================================================================================================================================
+                                                                    END "NAVBAR STYLES"
+    =================================================================================================================================================
+*/
+
+
+/*
+    =================================================================================================================================================
+                                                                    BEGIN "DELETEABLE"
+    =================================================================================================================================================
+*/
+
+/*
+    =============================
+        DELETE ADDING CONTENT 
+    =============================
+*/
 #explore-main {
     display: flex;
     flex-direction: column;
@@ -79,6 +137,26 @@ a {
     justify-content: center;
     padding: 5rem;
 }
+
+/*
+    =================================================================================================================================================
+                                                                    END "DELETEABLE"
+    =================================================================================================================================================
+*/
+
+
+/*
+    =================================================================================================================================================
+                                                                    BEGIN "PAGE COMPONENTS"
+    =================================================================================================================================================
+*/
+
+
+/*
+    =============================
+            CONTAINERS 
+    =============================
+*/
 
 .container {
     text-align: center;
@@ -100,7 +178,34 @@ a {
     }
 }
 
-// -----CARROUSELS-----
+
+/*
+    =============================
+              SECTIONS 
+    =============================
+*/
+
+.page-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+.section-title {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -.04rem;
+    margin-bottom: 1.5rem;
+}
+
+/*
+    =============================
+              CARROUSELS 
+    =============================
+*/
+
 .carrousel {
     height: 75vh;
     width: 95%;
@@ -117,7 +222,6 @@ a {
 }
 
 .banner-carrousel {
-    // background-color: $primary-color-light;
     background-image: url('../src/banner.jpg');
     background-position: center;
     background-size: cover;
@@ -137,20 +241,36 @@ a {
     margin: 0 14px;
 }
 
-// -----SECTIONS-----
+/*
+    =============================
+              TITLES 
+    =============================
+*/
+
+.banner-title {
+    color: $secondary-color;
+    font-weight: 800;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1,
+    h2{
+        margin: 1rem 0;
+    }
+}
+
+/*
+    =============================
+                INFO
+    =============================
+*/
 
 .course-info {
     padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-.page-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
 }
 
 .plans-info {
@@ -161,6 +281,83 @@ a {
     align-items: center;
     padding: 1rem;
 }
+
+.plan-price {
+    border: 2px solid black;
+    border-radius: 3%;
+    padding: 1.3rem;
+    transition: all .3s ease;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+/*
+    =============================
+              CARDS 
+    =============================
+*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 85%;
+    transition: all .4s ease;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+
+    li {
+        list-style-type: '👉';
+        margin: 1rem 0;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.primary-card {
+    height: 100%;
+    background-color: $secondary-color;
+
+
+}
+
+.secondary-card {
+    background-color: $grey2;
+}
+
+/*
+    =============================
+               CARETS
+    =============================
+*/
+
+.bi-caret-left {
+    width: 50%;
+}
+
+.bi-caret-right {
+    width: 50%;
+}
+
+/*
+    =================================================================================================================================================
+                                                                    END "PAGE COMPONENTS"
+    =================================================================================================================================================
+*/
+
+
+
+/*
+    =================================================================================================================================================
+                                                                    BEGIN "FOOTER"
+    =================================================================================================================================================
+*/
 
 .footer {
     background-color: $primary-color;
@@ -190,77 +387,6 @@ a {
     }
 }
 
-.profile-logo {
-    display: flex;
-    align-items: center;
-}
-
-// -----STRUCTURES-----
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 30%;
-    height: 85%;
-    transition: all .4s ease;
-    border: 1px solid $primary-color;
-    color: $primary-color;
-
-    li {
-        list-style-type: '👉';
-        margin: 1rem 0;
-    }
-}
-
-.card:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.primary-card {
-    height: 100%;
-    background-color: $secondary-color;
-
-
-}
-
-.secondary-card {
-    background-color: $grey2;
-}
-
-.plan-price {
-    border: 2px solid black;
-    border-radius: 3%;
-    padding: 1.3rem;
-    transition: all .3s ease;
-    &:hover {
-        transform: scale(1.3);
-    }
-}
-
-// -----TEXT STYLES-----
-.banner-title {
-    color: $secondary-color;
-    font-weight: 800;
-    font-size: 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1,
-    h2{
-        margin: 1rem 0;
-    }
-}
-
-.section-title {
-    font-weight: 700;
-    font-size: 40px;
-    letter-spacing: -.04rem;
-    margin-bottom: 1.5rem;
-}
-
 .footer-title {
     font-weight: 800;
     font-size: 17px;
@@ -283,12 +409,8 @@ a {
     color: $grey1;
 }
 
-// -----ICONS-----
-
-.bi-caret-left {
-    width: 50%;
-}
-
-.bi-caret-right {
-    width: 50%;
-}
+/*
+    =================================================================================================================================================
+                                                                    END "FOOTER"
+    =================================================================================================================================================
+*/
