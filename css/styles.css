@@ -217,6 +217,17 @@ a {
   box-shadow: 10px 9px 10px grey;
   margin: 0 14px;
 }
+@media screen and (max-width: 1300px) {
+  .section-carrousel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .section-carrousel img {
+    width: auto;
+  }
+}
 
 /*
     =============================
@@ -243,6 +254,7 @@ a {
 .course-info {
   padding: 1rem 1rem;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
