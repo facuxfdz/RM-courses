@@ -331,6 +331,7 @@ a {
   transition: all 0.4s ease;
   border: 1px solid #000000;
   color: #000000;
+  padding: 1.5rem;
 }
 .card li {
   list-style-type: "👉";
