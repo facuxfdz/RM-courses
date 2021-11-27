@@ -306,6 +306,16 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+
+    @media screen and (max-width: 1300px) {
+        flex-direction: column;
+        width: 100%;
+        div{
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        height: auto;
+    }
 }
 
 .plan-price {

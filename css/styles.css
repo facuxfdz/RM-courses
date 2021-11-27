@@ -268,6 +268,17 @@ a {
   align-items: center;
   padding: 1rem;
 }
+@media screen and (max-width: 1300px) {
+  .plans-info {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .plans-info div {
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+}
 
 .plan-price {
   border: 2px solid black;
