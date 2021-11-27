@@ -156,14 +156,31 @@ a {
 
 .grid-container {
     display: grid;
-    padding: 2.5rem;
     justify-items: center;
-    align-items: center;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 3rem .5rem;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+    
+    .card {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        height: auto;
+    }
+
+    @media screen and (max-width: 850px){
+        grid-template-columns: 100%;
+        grid-template-rows:  repeat(5,1fr);
+        height: auto;
+        .card {
+            width: 30%;
+        }
+    }
 }
 
 /*
