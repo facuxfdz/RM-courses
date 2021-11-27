@@ -55,6 +55,16 @@ a {
 
     display: flex;
     justify-content: space-between; 
+
+    @media screen and (max-width: 650px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .nav-link {
+            margin: 1.5rem .3rem;
+            width: 100%;
+        }
+    }
 }
 
 .nav-list {
@@ -75,6 +85,12 @@ a {
 
         &:hover {
             color: $grey1;
+        }
+    }
+
+    @media screen and (max-width: 665px) {
+        a{
+            font-size: 12px;
         }
     }
 }
@@ -179,6 +195,14 @@ a {
         height: auto;
         .card {
             width: 30%;
+        }
+    }
+
+    @media screen and (max-width: 700px){
+        
+        .card {
+
+            width: 50%;
         }
     }
 }
@@ -380,6 +404,11 @@ a {
         transform: scale(1.1);
         cursor: pointer;
     }
+
+    @media screen and (max-width: 1000px) {
+        width: 75%;
+    }
+
 }
 
 .primary-card {
@@ -429,6 +458,12 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+
+    @media screen and (max-width: 750px) {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
 }
 
 .footer-block {
